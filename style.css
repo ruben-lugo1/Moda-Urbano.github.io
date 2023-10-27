@@ -1,0 +1,328 @@
+/* Estilos generales */
+/* Agrega estas reglas al archivo style.css */
+.imagen-en-grande {
+    max-width: 10%; /* Limita el ancho máximo de la imagen al 80% del ancho del modal */
+    margin: 0 auto; /* Centra la imagen horizontalmente en el modal */
+    display: block;
+  }
+  
+  /* Añade cualquier estilo adicional según tus preferencias */
+  
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2b2b2b;
+}
+
+/* Estilos de la barra de navegación */
+header {
+    padding: 1% 0;
+    margin: 1%;
+    padding: 0%;
+}
+
+/* Estilos para el buscador minimalista */
+.buscador {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#inputBusqueda {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white; /* Color del texto en blanco */
+}
+
+#iconoBusqueda {
+    font-size: 20px;
+    color: rgb(211, 211, 211); /* Color del icono en blanco */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+#inputBusqueda {
+    font-size: 18px; /* Tamaño de fuente más grande */
+    color: white; /* Color del texto en blanco */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-top: -1%;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    margin-top: 3%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+
+nav a:hover {
+    color: #818181;
+}
+
+/* Estilos del hero section */
+.hero {
+    background-size: cover;
+    color: #fff;
+    flex-direction: column;
+    padding: 450px 0;
+    font-size: x-large;
+    position: relative;
+    text-align: center;
+}
+
+.hero video {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Estilos del contenido */
+.container {
+    z-index: 1;
+    padding: 7% 0;
+    flex-direction: column;
+}
+
+.urbanoModa {
+    margin-top: -80px;
+    font-size: 7em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    margin-left: -100px;
+    text-align: center;
+    color: #ff0374;
+}
+
+.container .btn {
+    background-color: #00e0c2;
+    color: #000000;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1em;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.container .btn:hover {
+    background-color: #018473;
+    color: #fff;
+}
+
+/* Estilos para la ventana emergente */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    z-index: 1000;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fff; /* Color de fondo de la ventana emergente */
+    max-width: 600px; /* Ancho máximo de la ventana emergente */
+    margin: 20px auto; /* Centrar en pantalla */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    position: relative;
+}
+
+.cintillo-container {
+    text-align: center; /* Centra horizontalmente el cintillo */
+    margin-top: -15%; /* Ajusta la distancia entre el video y el cintillo */
+}
+
+.cintillo {
+    max-width: 100%; /* Ocupará todo el ancho disponible */
+    height: auto; /* Mantendrá la proporción de aspecto original */
+    width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    font-style: normal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    color: #ff0374;
+}
+
+h2 {
+    color: #00e0c2;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 50%;
+}
+
+h3 {
+    color: #ff0374;
+    font-size: 4em;
+    flex-direction: row;
+}
+
+h4 {
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+/* Estilos para la galería de imágenes */
+.container {
+    max-width: 90%; /* Ajusta cantidad de imagenes por fila */
+    margin: 0 auto;
+}
+
+.galeria {
+    margin-top: -40%;
+    text-align: center;
+}
+
+.imagen img {
+    width: 400px; /* Ajusta el ancho deseado */
+    height: 600px; /* Ajusta la altura deseada */
+    padding-top: 20%;
+    margin-block-end: 1%;
+}
+
+/* Mantiene las imagenes en horizontal */
+.imagen {
+    flex: auto;
+    margin: 0 10px;
+    max-width: 400px; /* Ajusta el ancho deseado */
+    max-height: 200px; /* Ajusta la altura deseada */
+    text-align: center;
+    display: inline-block;
+}
+
+.imagen figcaption {
+    color: rgb(255, 255, 255); /* Cambia "red" al color deseado */
+    margin: 2%;
+    padding: -4%;
+}
+
+.imagen {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.imagen figure {
+    display: inline-block; /* Hace que la figura sea un bloque en línea */
+    text-align: center; /* Centra la imagen horizontalmente */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    position: relative; /* Permite la posición absoluta de elementos internos */
+}
+
+/* Estilos del botón */
+.comprar-ahora {
+    background-color: #00e0c2;
+    color: #000000;
+    border: none;
+    padding: -5% 9%;
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.1s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1%;
+}
+
+.comprar-ahora:hover {
+    background-color: #018473;
+    color: #fff;
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 80px 0; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+}
+
+  /* Estilo para la sección de suscripción */
+.subscribe {
+    margin-bottom: 120px; /* Espacio inferior */
+    display: flex; /* Habilitar flexbox */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    flex-wrap: wrap; /* Envolver elementos en caso de que haya espacio insuficiente */
+}
+
+.subscribe p {
+    font-size: 18px; /* Tamaño de fuente */
+    margin-right: 10px; /* Espaciado a la derecha del texto */
+}
+
+.subscribe input[type="email"] {
+    width: auto; /* Ancho automático para el campo de entrada */
+    flex-grow: none; /* Hacer que el campo de entrada crezca para llenar el espacio disponible */
+    padding: 15px; /* Espaciado interno */
+    margin-right: 15px; /* Espaciado a la derecha del campo de entrada */
+    border: none; /* Sin borde */
+    border-radius: 25px; /* Bordes redondeados */
+}
+
+.subscribe button {
+    background-color: #00e0c2; /* Color de fondo del botón */
+    color: #000000; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 15px 25px; /* Espaciado interno */
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+.subscribe button:hover {
+    background-color: #018473; /* Cambia el color de fondo al pasar el ratón */
+    color: #ffffff;
+}
+
+  /* Estilo para la sección de redes sociales */
+.follow-us p {
+    font-size: 16px; /* Tamaño de fuente */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.social-icons a {
+    margin-right: 10px; /* Espacio a la derecha de los íconos */
+}
+
+.social-icons img {
+    width: 30px; /* Tamaño de los íconos */
+    height: 30px;
+}
+
+  /* Estilo para los íconos de redes sociales */
+.social-icons a:hover img {
+    filter: brightness(70%); /* Reduce el brillo al pasar el ratón */
+}
